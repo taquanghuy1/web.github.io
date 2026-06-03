@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>PC Store - Trang Chủ</title>
+    <style>
+        /* CSS giúp ảnh trang chủ sắc nét, khít khung và có hiệu ứng Gaming */
+        .hero-img-container {
+            flex: 1;
+            height: 450px; /* Tăng thêm một chút độ cao cho ảnh 4K */
+            border-radius: 20px;
+            overflow: hidden;
+            border: 2px solid #ff4d4d;
+            box-shadow: 0 0 30px rgba(255, 77, 77, 0.5); /* Hiệu ứng phát sáng đỏ mạnh hơn */
+            background: #000;
+        }
+        .hero-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Giúp ảnh 4K khít 100% không bị méo */
+            display: block;
+            transition: transform 0.6s ease;
+        }
+        .hero-img-container:hover img {
+            transform: scale(1.05); /* Hiệu ứng zoom nhẹ khi di chuột */
+        }
+    </style>
+</head>
+<body>
+    <div class="wireframe-container">
+        <header>
+            <div class="logo">PC STORE</div>
+            <nav>
+                <a href="trangchu.html" class="active">TRANG CHỦ</a>
+                <a href="gioithieu.html">GIỚI THIỆU</a>
+                <a href="sanpham.html">SẢN PHẨM</a>
+                <a href="lienhe.html">LIÊN HỆ</a>
+            </nav>
+        </header>
+
+        <main style="display: flex; gap: 40px; align-items: center; margin-top: 40px;">
+            <div style="flex: 1.2;">
+                <h1 style="font-size: 3.2rem; font-weight: 900; line-height: 1.1; margin-bottom: 20px; color: #ff4d4d; text-shadow: 2px 2px 5px rgba(0,0,0,0.5);">
+                    PC Store:<br>NÂNG TẦM TRẢI NGHIỆM GAMING
+                </h1>
+                <p style="font-weight: 600; font-size: 1.2rem; margin-bottom: 30px; color: #eee; line-height: 1.5;">
+                    Sở hữu ngay những cấu hình PC đỉnh cao, <br>
+                    được thiết kế cá nhân hóa cho từng game thủ.
+                </p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="sanpham.html" class="pill-btn" style="background: #ff4d4d; border: none; color: white; padding: 15px 40px; font-weight: 900; letter-spacing: 1px;">MUA NGAY</a>
+                    <a href="gioithieu.html" class="pill-btn" style="border: 2px solid #fff; color: #fff; padding: 15px 40px; font-weight: 900;">TÌM HIỂU</a>
+                </div>
+            </div>
+
+            <div class="hero-img-container">
+                <img src="https://cdn.tgdd.vn/hoi-dap/1291419/10-tieu-chi-can-quan-tam-khi-chon-mua-man-hinh-may-tinh-pc-6-1.jpg" alt="High Quality Gaming Setup">
+            </div>
+        </main>
+
+        <div style="text-align: center; margin-top: 60px;">
+            <div style="width: 80px; height: 80px; border: 2px solid #ff4d4d; margin: 0 auto; display: flex; align-items: center; justify-content: center; font-weight: 900; color: #ff4d4d; position: relative; border-radius: 10px; background: rgba(255,77,77,0.05);">
+                CPU
+                <div style="position: absolute; width: 20px; height: 3px; background: #ff4d4d; left: -20px;"></div>
+                <div style="position: absolute; width: 20px; height: 3px; background: #ff4d4d; right: -20px;"></div>
+                <div style="position: absolute; height: 20px; width: 3px; background: #ff4d4d; top: -20px;"></div>
+                <div style="position: absolute; height: 20px; width: 3px; background: #ff4d4d; bottom: -20px;"></div>
+            </div>
+            <p style="font-size: 0.85rem; font-weight: 900; margin-top:
